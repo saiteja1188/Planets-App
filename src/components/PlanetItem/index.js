@@ -1,4 +1,3 @@
-// Write your code here
 import './index.css'
 
 const PlanetItem = props => {
@@ -6,8 +5,8 @@ const PlanetItem = props => {
   const {name, imageUrl, description} = planetDetails
 
   return (
-    <div className="planet-item-container">
-      <img src={imageUrl} alt={`planet ${name}`} className="image" />
+    <div className="planet-container">
+      <img className="image" src={imageUrl} alt={`planet ${name}`} />
       <h1 className="name">{name}</h1>
       <p className="description">{description}</p>
     </div>
